@@ -1,0 +1,530 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-flow:row wrap;
+    font-family:sans-serif;
+    direction: rtl;
+    text-align: center;
+    font-family: IRANsans,tahoma;
+    overflow: auto;
+}
+@font-face {
+    font-family:IRANsans;
+    src: url(/fonts/FontsFree-Net-ir_sans.ttf);
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+.d-flx{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+.wrap-row{
+    display: flex;
+    flex-flow: row wrap;
+}
+.wrap-column{
+    display: flex;
+    flex-flow: column wrap;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+text-center{
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+.margin-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container header{
+    color: aliceblue;
+    background:no-repeat center
+                 url(https://elementor.dostguru.com/cms/autotrics/wp-content/uploads/2021/05/slider1.png);
+     background-size:cover;
+    }
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+}
+a{
+    transition:all 300ms 0s ease-in-out;
+}
+
+/* HEADER style*/
+.first-part-header{
+   height: auto;
+   align-items: center;
+   padding: 5px;
+   
+}
+.logo img{
+    width: auto;
+   height: 40px;
+}
+.first-part-header a:not(.logo){
+    margin-inline-start: auto;
+}
+.sec-part-header{
+   padding: 40px;
+   
+}
+.sec-part-header h3{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}   
+.sec-part-header h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.sec-part-header p {
+    margin: 10px 30px 40px;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: .9px;
+}
+.sec-part-header a{
+    margin-bottom: 1300px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size:.75em;
+}
+
+.red-link{
+    background-color:#D81324;
+    padding: 8px 14px;
+    color:aliceblue;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+header .red-link:hover{
+    background-color: white;
+    color: #d81323;
+    
+}
+                    
+/* HAM MENU strt */
+.ham-menu label{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-content:space-around;
+    height: 40px;
+    width: 40px;
+    background-color:transparent;
+    padding: 7px;
+    cursor: pointer;
+ 
+}
+span{
+    background-color: rgba(240, 248, 255, 0);
+    width: 100%;
+    height: 15%;
+    border:1px solid white  ;
+}
+#checked:checked + .nav{
+    display: none;
+}
+#checked{display: none;}
+/* ham menu end */
+
+
+
+/* maine menu */
+
+header .nav{
+    position: absolute;
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0.940);
+    position: absolute;
+    justify-content: flex-start;
+    align-content: space-between;
+    width: 100%;
+    transform: translatex(21px);
+    padding: 0px;
+    margin-top: 8px;
+    height: 100%;
+}
+.nav a{
+    display: block;  
+}
+
+.nav>ul{
+    width: 100%;
+    padding:8px;
+}
+.nav ul{
+    list-style: none;
+}
+
+.nav > ul > li> a{
+    font-size: 16px;
+} 
+
+.nav ul > li >a{
+    padding: 8px 16px;
+} 
+
+.nav .triangle::after{
+    content: '';
+    border-top: 6px solid ;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    right: 90%;
+    z-index: 10;
+}
+
+.nav li:hover > a{
+    color: #D81324;
+}
+
+/*main> NESTED MENUE */
+
+.nav ul ul{
+    visibility: hidden;
+    position: absolute;
+}
+.nav > ul >li:hover ul{
+    visibility: visible;
+    position: relative;
+}
+
+.nav ul ul a{
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav ul ul {
+    padding: 0 20px;
+}
+.nav ul ul a{
+    padding: 8px 16px;
+} 
+
+
+  /* form input    */
+
+.request{
+    text-align: center;
+    margin-top: 25px;
+    padding:6px;
+    /* border: 2px red solid; */
+}
+.box-shadow{
+    box-shadow: 
+    1px .5px 8px 0 rgba(0, 0, 0, 0.15);
+    }
+.size{
+    width: 95%;
+    height: 95%;
+}
+  .request h3{
+    font-weight: 400;
+  }      
+.request .title-request {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.request .title-request a{display: block;}
+.title-request h6{font-size: 18px;}                       
+.request-form .input {
+    width: 100%;
+padding: 10px 16px;
+margin-bottom: 28px;
+border-radius: 3px;
+border:1px solid rgba(0, 0, 0, 0.505);
+outline: none;
+font-size: 16.5px;
+font-weight: 100;
+}
+.request-form{
+    padding:20px;  
+}
+
+.request .request-form textarea{
+    width: 100%;
+}
+input[type=submit]{
+    transition: all 250ms 0s ease-in-out;
+}
+input[type=submit]:hover{
+    background-color: white;
+    color: #d81323;
+    border: #d81323 1px solid;
+}
+
+/* SEC DESCRIPTION WATH WE DO */
+
+/* TEXTS */
+.description{padding: 8px;}
+.description .description-text {
+    padding: 14px;
+    text-align: start;
+}
+.description-text h3{
+    color:#D81324;
+    font-weight:400;
+    margin: 8px 0 12px;
+    font-size: 21px;
+}
+.description-text h2{
+    font-weight: 500;
+    margin: 0 0 14px;
+    font-size: 22px;
+}
+ .description-text p{
+    line-height: 1.5;
+    font-weight: 300;
+    /* font-size: 14px; */
+    text-align: justify;
+    margin-bottom: 14px;
+ }  
+ /*3 BOXES */
+  .boxes{
+    padding: 10px; 
+  }
+.description-box{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-content: center;
+    color: rgb(4, 3, 3);
+    padding:20px 15px; 
+    transition: all 150ms 50ms ease-in-out;
+}
+.description h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+.description-box .logo{
+    font-weight: 600;
+    font-size: 58px;
+    color:rgb(36, 36, 36);
+}   
+.a-container a:hover .description-box{
+    background-color: #D81324;
+    color: aliceblue;
+    scale: 1.02;
+}
+
+/*why choose us &  red dot  */ 
+
+.why-choose h2{
+font-weight: 400;
+display: block;
+width: 100%;
+margin-bottom: 20px;
+}
+.wrapper{
+    height: 50Px;
+    position: relative;
+}
+.wrapper .red-bar{
+    background-color: #D81324;
+    width: 140px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    transform:translate(-65%);
+}
+    
+.red-bar::after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #D81324;
+    position: relative;
+    left: 12px;
+}
+.red-bar::after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #D81324;
+    position: relative;
+    left: 12px;
+}
+/* .red-bar + span::after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color:#D81324;
+    position: relative;
+    left: 70px;
+    bottom: calc(30% + 5px);
+} */
+/* .red-bar ~ i::after{
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color:#D81324;
+    position: relative;
+    left: 80px;
+    bottom: calc(70% + 11px);
+} */
+
+
+
+/* BENEFITS BOXES */
+.benefit-box{
+padding: 5px;
+}
+
+.benefit-box img{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.benefit-box{
+    margin:5px 0;
+    padding: 7px;
+}
+.benefit-box h3{
+    font-weight: 500;
+    font-size: 19px;
+}
+.benefit-box p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.66);
+}
+.benefit-box a:hover{
+    color: #d81323;
+}
+.benefit-box a{
+    color: rgb(16, 15, 15);
+}
+/* GREAT CAR SERVICES */
+.services {
+background: url(/images/Rectangle-995.jpg) center no-repeat;
+background-size: cover;
+color:white;
+}
+.services .logo {
+    font-size: 50px;
+    font-weight: 400;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    line-height: 80px;
+    color:#D81324;
+    margin-bottom: 13px;
+}
+.services .title h2{
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.services h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    padding-right: 21px;
+    
+}
+.services p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.813);
+}
+.services .services-container a{
+    margin-top: 10px;
+    text-decoration:underline;
+    font-size: 17px;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.888);
+}
+.services .services-hyper-link a{
+    background-color: rgb(255, 255, 255);
+    padding:8px 16px;  
+}
+.services-hyper-link a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #d81323;
+}
+.services .box  a:hover{
+    color: #d81323;
+    background-color: transparent;
+}
+.services a:hover{
+    color: white;
+    background-color: #d81323;
+}
+
+/* FOOTER */
+footer{
+    background: url(/images/Rectangle-2-copy-4.jpg) center no-repeat;
+    background-size: cover;
+    color: white;
+}
+footer.logo{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+footer em{
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-style: normal;
+}
+footer p{
+    margin-bottom: 15px;
+    padding: 0 50px;
+}
+footer input[type=email]{
+   font-size: 17px;
+   width: 70%;
+}
+
+footer input[type=submit]{
+    order:-1;
+    background-color: #D81324;
+    color: white;
+    padding: 8px 20px;
+    /* font-size: 16; */
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    outline: none;
+    border: none;
+    width: 30%;
+}
+   
